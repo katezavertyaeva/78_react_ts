@@ -1,0 +1,9 @@
+.lesson06-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  flex: 1;
+  padding: 50px;
+  background-color: rgb(222, 180, 230);
+}
