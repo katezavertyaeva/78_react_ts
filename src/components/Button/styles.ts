@@ -1,4 +1,6 @@
-.my-button {
+import styled from "@emotion/styled";
+
+export const MyButton = styled.button`
   /* width: 350px; */
   width: 100%;
   padding: 20px;
@@ -9,4 +11,6 @@
   border: none;
   border-radius: 8px;
   cursor: pointer;
-}
+`;
+
+// export const Component = styled.p``;

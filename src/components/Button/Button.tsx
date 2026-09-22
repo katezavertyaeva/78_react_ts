@@ -1,15 +1,12 @@
-// Упрощенный импорт стилей
-import "./styles.css";
 import type { ButtonProps } from "./types";
-
+import { MyButton } from "./styles";
 
 function Button({ name, type = "button", onClick }: ButtonProps) {
   return (
-    <button className="my-button" type={type} onClick={onClick}>
+    <MyButton type={type} onClick={onClick}>
       {name}
-    </button>
+    </MyButton>
   );
 }
 
-// Компоненты экспортируем по умолчанию
 export default Button;
