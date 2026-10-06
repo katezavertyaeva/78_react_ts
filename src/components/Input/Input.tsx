@@ -13,7 +13,7 @@ function Input({
 }: InputProps) {
   return (
     <InputWrapper>
-      <Label htmlFor={id}>{label}</Label>
+     {label && <Label htmlFor={id}>{label}</Label>}
       <InputComponent
         name={name}
         type={type}
