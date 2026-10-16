@@ -48,3 +48,7 @@ export const Footer = styled.footer`
   padding: 20px;
   background: #adafdf;
 `;
+
+export const ButtonWrapper = styled.div`
+  width: 150px;
+`;
