@@ -5,6 +5,8 @@ import Layout from "./components/Layout/Layout";
 import PageNotFound from "./pages/PageNotFound/PageNotFound";
 import Users from "./pages/Users/Users";
 import AdminUser from "./pages/Users/components/AdminUser/AdminUser";
+import Home from "./pages/Home/Home";
+
 
 // Lessons imports
 import Lesson05 from "./lessons/Lesson05/Lesson05";
@@ -13,6 +15,7 @@ import Lesson07 from "./lessons/Lesson07/Lesson07";
 import Lesson08 from "./lessons/Lesson08/Lesson08";
 import Lesson10 from "./lessons/Lesson10/Lesson10";
 import Lesson12 from "./lessons/Lesson12/Lesson12";
+import Lesson15 from "./pages/Lesson15/Lesson15";
 
 // Homeworks imports
 import Homework10 from "./homeworks/Homework10/Homework10";
@@ -30,7 +33,7 @@ function App() {
         <Routes>
           {/* Route - компонент, который содержит путь и страницу, которая отображается
           по этому пути */}
-          <Route path="/" element="Home" />
+          <Route path="/" element={<Home />} />
           <Route path="/lesson-05" element={<Lesson05 />} />
           <Route path="/lesson-06" element={<Lesson06 />} />
           <Route path="/lesson-07" element={<Lesson07 />} />
@@ -41,6 +44,8 @@ function App() {
           {/* Lesson 14. React Router */}
           <Route path="/users" element={<Users />} />
           <Route path="/users/admin" element={<AdminUser />} />
+          {/* Lesson 15. Context */}
+          <Route path="/lesson-15" element={<Lesson15 />} />
 
           {/* Страница PageNotFound будет показываться, если ни один из маршрутов
           выше не будет найден */}
